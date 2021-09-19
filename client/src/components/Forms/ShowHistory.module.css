@@ -1,0 +1,52 @@
+.history {
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: auto;
+
+}
+.history table {
+  justify-content: center;
+  /* border: 2px solid green; */
+  font: inherit;
+  width: 90%;
+}
+.history table thead{
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+.history table button {
+  font: inherit;
+  font-size: 1.2rem;
+  width: 10%;
+  height: 10%;
+  color: rgb(10, 28, 87);
+  font-weight: bolder;
+  background: linear-gradient(to right, #eccde0, #dfb2f7);
+  border: none;
+  border-radius: 10px;
+  /* border: 2px solid green; */
+  margin: 3px;
+}
+.actions {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.actions button {
+  border-radius: 10px;
+  border-radius: 10px;
+  border-color: white;
+  border: transparent;
+  background: linear-gradient(to right, #ad5389, #3c1053);
+  font-weight: bolder;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.8rem 0;
+  margin: 10px;
+}

@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+.footer {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  /* height: 50%; */
+  padding-top: 10px;
+  /* background : linear-gradient(0deg,#766dff 0%,#88f3ff 100%); */
+  background-color: rgb(32, 28, 28);
+  color: white;
+}
+.footer h1 {
+  color: white;
+}
+.banner {
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  padding-bottom: 10px;
+  flex-direction: row;
+}
+.copyrigth {
+  /* border: 2px solid green; */
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  background-color: rgb(54, 54, 54);
+  width: 100%;
+  height: 7vh;
+  justify-content: center;
+  font-weight: 800;
+}
+.about {
+  /* border: 2px solid wheat; */
+  width: 20%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+  position: relative;
+  /* line-height: 0; */
+  /* padding-bottom: 20px; */
+}
+.about::before {
+  /* ::after works too */
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0; /* Change direction for a different side*/
+  z-index: 100;
+  width: 1px; /* Thickness */
+  height: 22vh;
+  background: rgb(94, 93, 93); /* Color */
+}
+
+.about h2 {
+  color: rgb(230, 230, 230);
+  text-align: center;
+  letter-spacing: 0.7rem;
+  font-weight: 900;
+  font-size: 2rem;
+  /* border: 2px solid red; */
+}
+.contact {
+  /* border: 2px solid red; */
+
+  position: relative;
+  width: 80%;
+  /* left: 10%; */
+  margin: auto;
+  text-align: center;
+}
+.contact p {
+  color: rgb(117, 113, 113);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  line-height: 35px;
+}
+
+.form {
+  /* border: 2px solid blue; */
+  width: 40%;
+  /* line-height: 0; */
+}
+.form h2 {
+  color: rgb(230, 230, 230);
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+.form form {
+  /* border: 2px solid red; */
+  position: relative;
+  height: 30%;
+  width: 80%;
+  left: 10%;
+  overflow: hidden;
+  font: inherit;
+}
+.form form input {
+  font-family: inherit;
+  height: 100%;
+  width: 100%;
+  color: #595f6e;
+  padding-top: 20px;
+  border: none;
+  background-color: inherit;
+  outline: none;
+  font-size: 1.5rem;
+  font-family: inherit;
+}
+.form form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  color: rgb(134, 133, 133);
+  border-bottom: 1px solid white;
+}
+.form form label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #c9cbcc;
+  transform: translateX(-100%);
+}
+.contentName {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form input:focus + .labelName .contentName,
+.form input:valid + .labelName .contentName {
+  transform: translateY(-150%);
+  font-size: 0.9rem;
+  color: white;
+}
+.form input:focus + .labelName::after,
+.form input:valid + .labelName::after {
+  transform: translateX(0%);
+  transition: transform 0.3s ease;
+}
+.actions{
+  width: 100%;
+  height: 20%;
+  position: relative;
+  margin: 10px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+.actions button{
+  font-family: "Roboto", sans-serif;
+  width: 40%;
+  height: 3rem;
+  color: black;
+  background-color: grey;
+  border: 2px solid grey;
+  border-radius: 8px;
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.actions button:hover{
+  width: 80%;
+  color: white;
+  transition: all 0.3s ease;
+}
+.extra {
+  /* border: 2px solid grey; */
+  /* border-left: 1px solid rgb(165, 164, 164) ;
+  border-right: 1px solid rgb(165, 164, 164) ; */
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  margin: auto;
+  
+}
+.extra::before {
+  /* ::after works too */
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0; /* Change direction for a different side*/
+  z-index: 100;
+  width: 1px; /* Thickness */
+  height: 22vh;
+  background: rgb(94, 93, 93); /* Color */
+}
+.icon {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.box {
+  /* border: 2px solid red; */
+  width: 32%;
+  /* padding-left: 1rem; */
+  text-align: center;
+}
+.box h3 {
+  letter-spacing: 0.3rem;
+  color: rgb(230, 230, 230);
+  padding-bottom: 10px;
+}
+.box p {
+  color: rgb(117, 113, 113);
+  font-weight: 600;
+  line-height: 30px;
+}
+.box p:hover {
+  color: rgb(207, 204, 204);
+  cursor: pointer;
+}
+@media screen and (max-width: 1150px){
+  .about h2{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about h2{
+    font-size: 2rem;
+  }
+  .banner{
+    flex-direction: column;
+  }
+  .extra{
+    width: 90%;
+    margin: auto;
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+  .extra::before{
+    display: none;
+  }
+  .about::before{
+    display: none;
+  }
+  .about{
+    width: 100%;
+    padding-bottom: 20px;
+    margin: auto;
+  }
+  .form{
+    width: 100%;
+  }
+
+}
+@media (max-width: 420px) {
+  .extra{
+    width: 100%;
+  }
+  .box h3{
+    font-size: 0.9rem;
+  }
+  .box p{
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 320px) {
+  .extra{
+    /* border: 2px solid red; */
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+  .box h3{
+    font-size: 0.6rem;
+  }
+  .box p{
+    font-size: 0.8rem;
+  }
+}

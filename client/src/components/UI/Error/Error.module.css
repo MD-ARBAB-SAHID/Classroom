@@ -1,0 +1,28 @@
+.animation{
+
+    width:220px;
+    height: 220px;
+    display: block;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+.actions{
+    /* border: 2px solid red; */
+    text-align: center;
+}
+.actions button {
+    cursor: pointer;
+    font: inherit;
+    color: white;
+    margin: 10px;
+    width: fit-content;
+    background-color:  #3c1053;
+    border: 1px solid #3c1053;
+    border-radius: 4px;
+    padding: 0.5rem 2.5rem;
+  }
+  
+  .actions button:hover {
+    background-color: #662a86;
+    border-color: #662a86;
+  }

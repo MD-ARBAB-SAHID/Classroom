@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20rem;
+  height: 20rem;
+  margin: 0.8rem auto;
+  /* border: 2px solid red; */
+}
+
+.details-img img {
+  border-radius: 5px;
+  width: fit-content;
+  height: 100%;
+  object-fit: fill;
+}
+.details-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details-data h1 {
+  margin: 0.2rem 0.6rem;
+}
+.details {
+  padding: 0.2rem 0.8rem;
+  margin: 0.3rem 0.8rem 0rem;
+  font-size: 1.65rem;
+  font-family: "Urbanist", sans-serif;
+  color: rgb(211, 75, 104);
+}
+
+.details-left {
+  font-weight: 700;
+  color: rgb(65, 61, 61);
+}
+@media (max-width: 620px) {
+    .details{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 520px) {
+    .details{
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,133 @@
+
+.header {
+  display: block;
+  margin: 1rem auto;
+  height: fit-content;
+  /* border: 2px solid white; */
+}
+.header h2 {
+  font-size: 2.2rem;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+.subject {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: white;
+  margin: 1rem 1rem;
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.534);
+}
+a{
+  width:100%;
+  text-decoration: none;
+  /* display: none; */
+}
+.subButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font: inherit;
+  font-size: 1.2rem;
+  color: #3c1053;
+  font-weight: bolder;
+  width: 80%;
+  height: 4rem;
+  background: linear-gradient(to right, #eccde0, #dfb2f7);
+  border: none;
+  border-radius: 4px;
+  /* border: 2px solid green; */
+  margin: 3px;
+  cursor: pointer;
+}
+
+.try {
+  border: none;
+  /* border: 2px solid black; */
+  height: inherit;
+  width: 90%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  font: inherit;
+  color: inherit;
+  cursor: inherit;
+}
+.icon{
+  width: 20%;
+  height: inherit;
+  background-color: transparent;
+  /* font-size: 1rem; */
+  font-weight: bolder;
+  border: none;
+  opacity: 0.5;
+  color: inherit;
+  transform: rotate(90deg);
+  cursor: pointer;
+  text-align: center;
+}
+.icon:hover{
+  opacity: 1;
+  
+}
+
+.listItems {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 65vh;
+  overflow: auto;
+  width: 25%;
+}
+.listItems h1{
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.active {
+  background: linear-gradient(to right, #ad5389, #3c1053);
+  color: white;
+  font-weight: 600;
+}
+.subjectData {
+  /* border: 2px solid green; */
+  border-right:3px solid rgb(33, 38, 107) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  flex-direction: column;
+  width: 75%;
+}
+.subjectData h1{
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .subject {
+    flex-direction: column;
+  }
+  .subjectData {
+
+    border-top:2px solid #3c1053 ;
+    border-right:none;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .listItems {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .header h2{
+    margin: auto 1.5rem;
+    font-size: 1.5rem;
+  }
+}

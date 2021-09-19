@@ -1,0 +1,124 @@
+.auth {
+  /* border: 2px solid red; */
+  margin: 5rem auto;
+  width: 95%;
+  max-width: 25rem;
+  height: fit-content;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.52);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  text-align: center;
+  color: black;
+  padding-top: 4rem;
+  z-index: 100;
+}
+.signUp {
+  max-width: 50rem;
+}
+
+.auth h1 {
+  text-align: center;
+  color: #3c1053;
+  font-size: 2rem;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control label {
+  display: block;
+  color: #3c1053;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.control input {
+  font: inherit;
+  background-color: #cbaadd;
+  color: #3c1053;
+  border-radius: 4px;
+  border: 1px solid black;
+  width: 90%;
+  text-align: left;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+}
+.control input:focus {
+  outline: none;
+}
+.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.error-text {
+  color: #b40e0e;
+  text-align: left;
+  margin-left: 30px;
+}
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actions button {
+  cursor: pointer;
+  font: inherit;
+  color: white;
+  margin: 10px;
+  width: fit-content;
+  background-color: #3c1053;
+  border: 1px solid #3c1053;
+  border-radius: 4px;
+  padding: 0.5rem 2.5rem;
+}
+
+.actions button:hover {
+  background-color: #69228f;
+  border-color: #69228f;
+  /* color: black; */
+}
+
+.actions button:disabled,
+.actions button:disabled:hover,
+.actions button:disabled:active {
+  color: black;
+  background-color: transparent;
+  border-color: #3c1053;
+  cursor: not-allowed;
+}
+
+.dekha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 13rem;
+  height: 13rem;
+
+  margin: 1.2rem auto;
+}
+
+.dekha img {
+  width: fit-content;
+  height: 200px;
+  object-fit: fill;
+}
+
+@media screen and (max-width: 1000px) {
+  .auth {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .auth {
+    margin: 0rem auto;
+    margin-bottom: 0.5rem;
+  }
+}
